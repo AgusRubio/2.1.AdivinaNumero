@@ -5,9 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2._1.AdivinaNumero"
         mc:Ignorable="d"
-        Title="Adivina el número" Height="213.158" Width="504.858"
+        Title="Adivina el número" Height="205.524" Width="483.131"
         Icon="assets/icon.ico">
-    <Grid>
+    <Grid RenderTransformOrigin="0.5,0.5" Margin="0,0,1,0">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="0.147"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
         <TextBlock HorizontalAlignment="Left" Margin="58,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="¿Qué número he pensado"/><Run Text="?"/></TextBlock>
         <TextBox x:Name="Numero"  HorizontalAlignment="Left" Height="23" Margin="272,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button Content="Reiniciar" HorizontalAlignment="Left" Margin="265,134,0,0" VerticalAlignment="Top" Width="88" Click="Button_Click"/>
