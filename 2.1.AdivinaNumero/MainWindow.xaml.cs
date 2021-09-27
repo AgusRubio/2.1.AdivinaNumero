@@ -19,7 +19,7 @@ namespace _2._1.AdivinaNumero
         }
 
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ReiniciarButton_Click(object sender, RoutedEventArgs e)
         {
             numAleatorio = aleatorio.Next(0,101);
             Numero.Text = "";
@@ -28,7 +28,7 @@ namespace _2._1.AdivinaNumero
 
 
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void ComprobarButton_Click(object sender, RoutedEventArgs e)
         {
             int num = int.Parse(Numero.Text);
 
