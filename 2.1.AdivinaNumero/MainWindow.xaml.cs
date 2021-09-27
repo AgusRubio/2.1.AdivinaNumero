@@ -22,7 +22,7 @@ namespace _2._1.AdivinaNumero
         private void ReiniciarButton_Click(object sender, RoutedEventArgs e)
         {
             numAleatorio = aleatorio.Next(0,101);
-            Numero.Text = "";
+            Numero.Clear();
             Solucion.Text = "";
         }
 
